@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "LR1Item_generator(cn)"
-date:   2014-11-24
+date:   2014-11-25
 category: projects
 ---
+[简体中文]/[<a href="../LR1Item-generator-en/">English</a>]
 ###**简介**  
 LR1Item_generator是一个用来生成LR(1)项目集的程序，它以一个LR(1)文法的产生式集合作为输入，经过计算生成LR(1)的项目集以及分析表。  
 
