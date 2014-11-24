@@ -1,0 +1,27 @@
+---
+layout: default
+title: Projects
+---
+<div class="col-sm-12">
+    <div class="page-title">
+        Projects
+    </div>
+    <div class="posts">
+        {% for category in site.categories %}
+             {% if category.first == 'projects' %}
+                 {% for post in category.last %}
+                     <div class="post-li">
+                         <div class="col-sm-8">
+                            <ul class="postlist-block">
+                                <li><time>{{ post.date |  date: "%b.%-d %Y" }}</time>
+                                <a class="postlist-meta pull-right comments-meta" href="{{ post.url }}#disqus_thread">0 <i class="fa fa-comments-o fa-lg"></i></a></li>
+                                <li><a class="postlist-title" href="{{ post.url }}">{{ post.title }}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                 {% endfor %}
+             {% endif %}
+            	</ul>
+        {% endfor %}
+    </div>
+</div>

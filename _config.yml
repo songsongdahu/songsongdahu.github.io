@@ -1,5 +1,5 @@
-name: Wangana
-description:  Perfect for powering your GitHub hosted blog.
+name: songsongdahu's blog
+description:  This is my blog.
 
 sass:
   sass_dir: assets/css/_sass
@@ -8,7 +8,7 @@ sass:
 # url: http://nadjetey.github.io
 
 owner:
-    name: Nii Adjetey Sowah
+    name: #
     twitter: #
     github: #
     disqus_shortname: #
