@@ -7,7 +7,7 @@ category: projects
 ###**简介**  
 LR1Item_generator是一个用来生成LR(1)项目集的程序，它以一个LR(1)文法的产生式集合作为输入，经过计算生成LR(1)的项目集以及分析表。  
 
-环境  
+**环境**  
 
 - windows 7
 - jdk1.8.0_25
@@ -21,7 +21,15 @@ LR1Item_generator是一个用来生成LR(1)项目集的程序，它以一个LR(1
 - 空行代表输入结束
 
 例如<code>S->Cab</code>的输入为<code>S@C@!a@!b</code>(其中S、C为非终结符,a、b为终结符)  
-
+  
+**输入方法**
+{% highlight java %}
+LR1Item G = la.readInput();
+//LR1Item G = la.readTxt();
+{% endhighlight %}
+如果选择上面一行（默认），则在运行之后按行输入语法，空行结束。  
+如果选择下面一行，则需要在运行前将语法预先输入到Productions.txt中。  
+p.s. 当前Productions.txt默认保存了PL/0的语法，可以作为示例使用（结果会产生273个LR1项集）。  
 ###**示例(源自<a href="http://ja.wikipedia.org/wiki/LR%E6%B3%95" target="_blank">wikipedia</a>)**
 <pre><code>文法:
 (1)E→E*B
@@ -92,8 +100,6 @@ I8
 E -> E+B. , $/*/+
 </code></pre>
 
-其他示例click here(现在还没有,待补充)
-
 ###**主要算法**  
 - CLOSURE方法  返回一个产生式集合的闭包
 <pre><code>SetOfItems CLOSURE(I){
@@ -127,7 +133,3 @@ E -> E+B. , $/*/+
     until 不再有新的项集加入到C中;
 }
 </code></pre>
-
-###**to do**
-1.待修改的一些小问题，已经使用E-R-R-O-R标识了  
-2.将PL/0的语法输入时，产生的结果与之前不符  
