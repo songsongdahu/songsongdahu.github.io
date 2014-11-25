@@ -6,7 +6,7 @@ category: projects
 ---
 [<a href="../LR1Item-generator/">简体中文</a>]/[English]
 ###**Introduction**  
-LR1Item_generator is a program that can be used to generate the LR(1) items and parsing table from input grammar.  
+LR1Item_generator is a program that can be used to generate the LR(1) items and parsing table from inputted grammar.  
 
 **Environment**  
 
@@ -17,19 +17,19 @@ LR1Item_generator is a program that can be used to generate the LR(1) items and 
 
 ###**InputFormat**  
 - The grammar symbols should be spilt by the symbol '@'
-- You should input the symbol '!' before a terminal symbol to show that it is a terminal symbol(If you don't, it will be recognized as an unterminal symbol)
-- In one line you could input only one produciton
+- You should input the symbol '!' before a terminal symbol to show that it is a terminal symbol(If you don't, it will be recognized as an nonterminal symbol)
+- In each line you could input only one produciton
 - The input will be stopped when you input an empty line
 
-For example, the grammar <code>S->Cab</code> will be input like <code>S@C@!a@!b</code> (Notice that S and C are unterminal symbols while a and b are terminal symbols).  
+For example, the grammar <code>S->Cab</code> will be inputted like <code>S@C@!a@!b</code> (Notice that S and C are nonterminal symbols while a and b are terminal symbols).  
   
 **The way of inputting**
-{% highlight java %}
+{% highlight java linenos %}
 LR1Item G = la.readInput();
 //LR1Item G = la.readTxt();
 {% endhighlight %}
-If you have chosen the first line（default）, please run the program and input the grammar in line.  
-If you have chosen the second line, please write the grammar into "Productions.txt" before running   
+If you choose the first line（default）, please run the program and input the grammar in line.  
+If you choose the second line, please write the grammar into "Productions.txt" before running   
 p.s. I have already inputted the PL/0's grammar into "Productions.txt" ,which can be used as examples.（The program will generate 273 LR(1) items :）  
 ###**Examples(from <a href="http://ja.wikipedia.org/wiki/LR%E6%B3%95" target="_blank">Wikipedia</a>)**
 <pre><code>Grammar:
