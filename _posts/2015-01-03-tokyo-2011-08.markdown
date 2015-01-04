@@ -9,7 +9,7 @@ JP:http://www.i.u-tokyo.ac.jp/edu/course/ci/pdf/2011-8-program.pdf
 EN:http://www.i.u-tokyo.ac.jp/edu/course/ci/pdf/2011-8-program-en.pdf
 
 ###代码
-https://github.com/songsongdahu/tokyo_2011_08
+https://github.com/songsongdahu/tokyo_programming/tree/master/src/tokyo_2011_08
 
 ###思考
 (1)～(5)<br>

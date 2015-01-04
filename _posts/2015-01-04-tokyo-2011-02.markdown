@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "东京大学 编程题 201102"
+date:   2015-01-04
+category: blog
+---
+###试题
+JP:http://www.i.u-tokyo.ac.jp/edu/course/ci/pdf/2011_2_ci_practice_ja.pdf
+EN:http://www.i.u-tokyo.ac.jp/edu/course/ci/pdf/2011_2_ci_practice_en.pdf
+
+###代码
+https://github.com/songsongdahu/tokyo_programming/tree/master/src/tokyo_2011_02
+
+###思考
+問1:<br>
+http://ja.wikipedia.org/wiki/ASCII
+<br>查了一下ASCII码中长得像OX-的只有大写的o(O)大写的x(X)和减号(-)了……
+<br>本来还以为是まる、ばつ之类的日文符号，结果在cmd中输出的时候会乱码，没找到解决方法。（使用chcp成UTF-8之后，输出UTF-8编码的字符串还是会乱码）
+<br>
+問2:<br>
+输入就用scan来获取，比较简单。不过记一下A和a的ASCII码可以让字母转数字方便点（A:65 a:97），否则大概只能swtich了吧？胜负判断也没啥好说的。
+<br>
+問3,4:<br>
+从剩余的里面随机挑选一个，想起以前做的cardgame了，这次用的方法是遍历一遍把剩余的格子添加到arrayList里，然后随机选0～size-1的数返回。
+<br>
+問5,6:<br>
+有点难，这次只判断了下一步能否赢，或者能否输的地方，判断的方法也比较麻烦，是枚举了8条线上可能的情况。可以想到的但是还未实现的判断是下在哪里之后可以让本次有两个可以赢得点，或者对方下载哪里之后有两个可以输的点，不过之后就比较繁琐了(´・ω・`)。<br>
+問7:<br>
+重点，这里使用socket类来进行数据传输。
+<pre><code>player1侧:
+ServerSocket serverSocket = new ServerSocket(PORT);
+Socket socket = serverSocket.accept();
+等待player2进入
+然后轮到player1的时候，计算出input
+pw.println(input);
+轮到player2的时候
+String input = br.readLine();
+在这里等
+
+player2侧:
+Socket socket = new Socket(HOST,PORT);//HOST为1的ip,PORT和1一样
+pw.println("player2 entered.");
+然后后面和player1差不多，反过来就好。
+</code></pre>
+
+###Socket总结
+<pre><code>java.net.Socket
+java.net.ServerSocket;
+
+ServerSocket serverSocket = new ServerSocket(PORT);
+Socket socket = serverSocket.accept();//开始悬挂等下面那句过来
+Socket socket = new Socket(HOST,PORT);//不要忘记close
+
+PrintWriter pw = new PrintWriter(socket.getOutputStream(),true);
+pw.println(String x);//写
+BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+br.readLine()//读
+</code></pre>
+
+###感想
+<li>好好学英语
+<li>人生真是前途多难
+<li>下次试试用管道实现进程间通信

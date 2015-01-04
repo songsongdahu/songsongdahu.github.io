@@ -2,7 +2,7 @@
 layout: post
 title:  "LR1Item_generator(en)"
 date:   2014-11-25
-category: projects
+category: program
 ---
 [<a href="../LR1Item-generator/">简体中文</a>]/[English]
 ###**Introduction**  
