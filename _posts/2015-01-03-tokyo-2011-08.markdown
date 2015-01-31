@@ -56,4 +56,4 @@ g.fillOval(gun_x, gun_y, 16, 16);
 再简单的东西也要记录一下，要不以后真的全忘了也没地方回忆……
 
 ###链接
-[<a href="http://127.0.0.1:4000/2015/01/tokyo-2014-02/">201402</a>]
+[<a href="http://songsongdahu.github.io/2015/01/tokyo-2014-02/">201402</a>]

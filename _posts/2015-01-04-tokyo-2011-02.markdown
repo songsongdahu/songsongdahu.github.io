@@ -63,5 +63,5 @@ br.readLine()//读
 <li>下次试试用管道实现进程间通信
 
 ###链接
-[<a href="http://127.0.0.1:4000/2015/01/tokyo-2011-08/">201108</a>]
-[<a href="http://127.0.0.1:4000/2015/01/tokyo-2014-02/">201402</a>]
+[<a href="http://songsongdahu.github.io/2015/01/tokyo-2011-08/">201108</a>]
+[<a href="http://songsongdahu.github.io/2015/01/tokyo-2014-02/">201402</a>]
