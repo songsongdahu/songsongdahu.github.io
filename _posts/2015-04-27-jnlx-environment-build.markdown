@@ -32,10 +32,10 @@ Javaはapt-getコマンドを使ってopenjdk-7-jreとopenjdk-7-jdkをインス�
 ちなみに環境変数の設定はまだしていません。
 ###Git Remote Serverの構築
 構築した後あんまり必要できないと気づいたんですけど、一旦ここに書いておきます。
-参照：
-<a href="http://qiita.com/KazuyoshiUeno@github/items/bed591f7a076cb92ed20">EC2＋gitリモートサーバ構築#1</a>
-<a href="http://qiita.com/KazuyoshiUeno@github/items/14afe3712ff43a01da69">EC2＋gitリモートサーバ構築#2</a>
-実は上のURLを参照する前にも構築は出来ましたけど、利用方法が間違えました。最初はpushした後、サーバー側にもローカルと同じのファイルが作成されると思いますが、多分そうではありません。サーバーから他の場所にpullしたら同じのファイルが作成されますけど…
+<br>参照：
+<br><a href="http://qiita.com/KazuyoshiUeno@github/items/bed591f7a076cb92ed20">EC2＋gitリモートサーバ構築#1</a>
+<br><a href="http://qiita.com/KazuyoshiUeno@github/items/14afe3712ff43a01da69">EC2＋gitリモートサーバ構築#2</a>
+<br>実は上のURLを参照する前にも構築は出来ましたけど、利用方法が間違えました。最初はpushした後、サーバー側にもローカルと同じのファイルが作成されると思いますが、多分そうではありません。サーバーから他の場所にpullしたら同じのファイルが作成されますけど…
 
 ###感想
 やっぱりこのような文章はやりながら書くほうがいいと思います。
