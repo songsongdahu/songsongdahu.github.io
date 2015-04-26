@@ -14,3 +14,5 @@ Windows PC 一台（windowsがすでにインストールされた）<br>
 まずは<a href="https://getfedora.org/ja/">fedora</a>と<a href="http://sourceforge.net/projects/win32diskimager/">ImageWriterのダウンロード</a>だ（ここは「だ」をついたらなんか変な感じがするけど、省略したら多分文法が間違うかな）。ダウンロードした後、ImageWriterをインストールして、開いて、ダウンロードしたfedoraのisoイメージをusbに書き込んだ。
 <br><br>
 次はパーティションのチェック
+
+just for test
