@@ -14,7 +14,7 @@ category:	blog
 <br><br>
 後はインスタンスへのコネクトです。上のガイドより、作成されたKey Pairをダッシュボードに登録した後、SSHでコネクトできます。コマンドはこんな感じです。
 <code>ssh -i admin-key-pair-tokyo.pem ubuntu@52.68.167.127</code>
-毎回鍵のアドレスを入力するのは面倒臭いですから、~/.ssh/configに下のコードを追加しました。
+<br>毎回鍵のアドレスを入力するのは面倒臭いですから、~/.ssh/configに下のコードを追加しました。
 <pre><code>
 Host amazon
     HostName [インスタンスのアドレス]
