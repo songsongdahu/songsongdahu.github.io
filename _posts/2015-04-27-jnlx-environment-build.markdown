@@ -1,6 +1,6 @@
 ---
 layout:		post
-title:		"Amazon EC2を用いて小さいサーバーを構築してみた"
+title:		"クラウドコンピューティング その二"
 date:		2015-04-26
 category:	blog
 ---
