@@ -27,6 +27,11 @@ servletからjspへ<br>
 servlet:request.setAttribute("name",value);<br>
 jsp:(valueのデータ型)request.getAttribute("name");<br>
 
+valueのデータ型はなんでもおｋだと思います。<br>
+
+ちなみに、servletからjspへのforwardは以下のように書きます。<br>
+request.getRequestDispatcher("url").forward(request, response);
+
 ###データベース
 MySQLを使いました。JavaとMySQLの接続は<a href="http://dev.mysql.com/downloads/connector/j/">Connector/J</a>を使いました。<br>
 
@@ -37,4 +42,9 @@ sqlの書き方もだいたい忘れちゃいましたので、とても有名�
 mysqlのバックアップはここに<a href="http://phpspot.net/php/pgmysqldumpでバックアップ＆復元.html">参照</a>。<br>
 
 ちなみに、データベースの遠隔操作まだできません。しばらくは、ローカルからバックアップしてサーバーに復元することになっています。
+
+###to do
+1.ページング
+2.imgをそのまま使っていますので、デカすぎてロードは遅くなっています。
+3.コンソール
 
