@@ -1,7 +1,7 @@
 ---
 layout:		post
 title:		"jinanluxiのウェブサイトをAmazonEC2に移った"
-date:		2015-04-26
+date:		2015-05-07
 category:	blog
 ---
 <a href="https://github.com/songsongdahu/jinanluxi">ソース</a>
@@ -12,9 +12,20 @@ jinanluxiという会社のサイトは、もともと他のプログラマー�
 java 1.7.0_75<br>
 Tomcat 7.0.61(サーバー側はtomcat8だけど問題なく使える)<br>
 MySQL 5.6.24<br>
-Sublime Text Build 3083<br><br>
+Sublime Text Build 3083<br>
 
 コンパイルするとき、tomcatインストールディレクトリの中のlib/servlet-api.jarがよく使われているから、環境変数CLASSPATHに添加しました。<br>
+
+###servletとjspパラメータの受け渡し
+jspからservletへ<br>
+1.formタブを用いる（getまたはpost）<br>
+2.urlに?name=valueを追加する（get）<br>
+
+servlet:request.getParameter("name");<br>
+
+servletからjspへ<br>
+servlet:request.setAttribute("name",value);<br>
+jsp:(valueのデータ型)request.getAttribute("name");<br>
 
 ###データベース
 MySQLを使いました。JavaとMySQLの接続は<a href="http://dev.mysql.com/downloads/connector/j/">Connector/J</a>を使いました。<br>
