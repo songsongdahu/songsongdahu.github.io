@@ -5,6 +5,8 @@ date:		2015-05-07
 category:	blog
 ---
 <a href="https://github.com/songsongdahu/jinanluxi">ソース</a>
+<a href="http://www.jnluxi.net/Html/Main.asp">old</a>
+<a href="http://52.68.167.127:8080/jinanluxi/">new</a>
 ###背景
 jinanluxiという会社のサイトは、もともと他のプログラマー（会社?）を依頼してaspで書かけれました。今回は、このサイトをjspで書き直して、先日構築したAmazonEC2のサーバーに移りました。もちろん、サイトのデザインをそのままにして、バックエンドだけ変えました。<br>
 
