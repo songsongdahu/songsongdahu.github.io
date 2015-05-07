@@ -1,6 +1,6 @@
 ---
 layout:		post
-title:		"CC1:Google App Engineを使ってみた"
+title:		"Google App Engineを使ってみた"
 date:		2015-04-20
 category:	blog
 ---
