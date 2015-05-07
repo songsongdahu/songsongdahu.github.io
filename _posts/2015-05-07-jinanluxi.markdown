@@ -6,16 +6,24 @@ category:	blog
 ---
 <a href="https://github.com/songsongdahu/jinanluxi">ソース</a>
 ###背景
-jinanluxiという会社のサイトは、もともと他のプログラマー（会社?）を依頼してaspで書かれた。今回は、このサイトをjspで書き直して、先日構築したAmazonEC2のサーバーに移った。もちろん、サイトのデザインをそのままにして、バックエンドだけ変えた。<br>
+jinanluxiという会社のサイトは、もともと他のプログラマー（会社?）を依頼してaspで書かけれました。今回は、このサイトをjspで書き直して、先日構築したAmazonEC2のサーバーに移りました。もちろん、サイトのデザインをそのままにして、バックエンドだけ変えました。<br>
 
 ###開発環境
-java 1.7.0_75
-Tomcat 7.0.61(サーバー側はtomcat8だけど問題なく使える)
-MySQL 5.6.24
-Sublime Text Build 3083
+java 1.7.0_75<br>
+Tomcat 7.0.61(サーバー側はtomcat8だけど問題なく使える)<br>
+MySQL 5.6.24<br>
+Sublime Text Build 3083<br><br>
 
-コンパイルするとき、tomcatインストールディレクトリの中のlib/servlet-api.jarがよく使われているから、環境変数CLASSPATHに添加した。
+コンパイルするとき、tomcatインストールディレクトリの中のlib/servlet-api.jarがよく使われているから、環境変数CLASSPATHに添加しました。<br>
 
 ###データベース
-MySQLを使った。JavaとMySQLの接続は<a href="http://dev.mysql.com/downloads/connector/j/">Connector/J</a>を使った。<br>
-javaとmysqlの接続方法を忘れた時、<a href="https://github.com/songsongdahu/jinanluxi/blob/master/WEB-INF/classes/DBHelper.java">DBHelper.java</a>を参考すれば良い。<br>
+MySQLを使いました。JavaとMySQLの接続は<a href="http://dev.mysql.com/downloads/connector/j/">Connector/J</a>を使いました。<br>
+
+またjavaとmysqlの接続方法を忘れた時、<a href="https://github.com/songsongdahu/jinanluxi/blob/master/WEB-INF/classes/DBHelper.java">DBHelper.java</a>を参考すれば良い。<br>
+
+sqlの書き方もだいたい忘れちゃいましたので、とても有名なw3schoolsのチュートリアルを参考しました。<br>
+
+mysqlのバックアップはここに<a href="http://phpspot.net/php/pgmysqldumpでバックアップ＆復元.html">参照</a>。<br>
+
+ちなみに、データベースの遠隔操作まだできません。しばらくは、ローカルからバックアップしてサーバーに復元することになっています。
+
